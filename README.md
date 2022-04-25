@@ -7,7 +7,7 @@
 Beforehand, kindly note that I have used Swing instead of Maven Spring because this project in Java is my first experience with Java. I did not have more time to go 
 through Maven even though I tried to learn it before using Swing which was more easy and quick to implement for me at that time.
 
-1- Please first double click on the file SolactiveCodeChallenge_SIBI_Cheik.jar
+1- Please first double click on the file CodeChallenge_SIBI_Cheik.jar
 2- Choose firstly the option either European option or Barrier to price. Whether you selected either European option or Barrier option some fields will be appear or 
 desappear
 3- Select the option type either Call or Put
