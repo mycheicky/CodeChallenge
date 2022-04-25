@@ -1,10 +1,10 @@
-#################################################################################################################################################################
-#####################################################################|                              |############################################################
-#####################################################################| Monte Carlo Pricing (v1.00)  |############################################################ 
-#####################################################################|                              |############################################################
-#################################################################################################################################################################
+#######################################################################################################################################################
+###########################################################|                              |############################################################
+###########################################################| Monte Carlo Pricing (v1.00)  |############################################################ 
+###########################################################|                              |############################################################
+#######################################################################################################################################################
 
-#####################################################################|  HOW TO RUN THE PROJECT  |################################################################
+###########################################################|  HOW TO RUN THE PROJECT  |################################################################
 Beforehand, kindly note that I have used Swing instead of Maven Spring because this project in Java is my first experience with Java. I did not have more time to go 
 through Maven even though I tried to learn it before using Swing which was more easy and quick to implement for me at that time.
 
@@ -15,7 +15,7 @@ desappear
 4- As well as only for a Barrier option, please select the Barrier option type e.g DownOut
 5- Fill in the rest of the textfieds with the expected value types.
 
-#####################################################################|        ASSUMPTIONS       |################################################################
+##########################################################|        ASSUMPTIONS       |################################################################
 # Assumption 1: regarding of the evolution of assets
 The evolution of the underlying asset S is a stochastic process verified the stochastic differential equation: dSt = rStdt + σStdWt, S(t = 0) = S0
 • σ volatility of the asset
@@ -40,17 +40,17 @@ NB: across the code the variables r, σ and T are expressed respectively annuall
 We simulate the value of asset as done for pricing the European option but we simulate the value of asset every day because it is a path-dependant. Thus in case the value of asset breaches up or down the barrier with respect of the option type and barrier type we add up at the maturity the option payoff. Afterwards, the barrier option price is given 
 by the arithmetic mean: V(S0, 0) = exp(−rT) Sum(n=1->Nmc, max(S0 exp((r − σ^2/2)T + σsqrt(T)N(n)(0, 1)) − K, 0))/Nmc e.g Barrier European Call option.
 
-#####################################################################|  ABOUT HAVING MORE TIME  |################################################################
+#########################################################|  ABOUT HAVING MORE TIME  |################################################################
 1- First of all, better handled the value type mismatch errors and the other exceptions.
 2- Implemented some graphics to illustrer the options payoff, delta, gamma and vega curves
 3- Carried on the Unit test of all functions, modules and exceptions to get a better coverage score
 4- Implemented Maven Spring Boot instead of Swing
 5- Degined more the Layout used
 
-#####################################################################|         FEEDBACK        |################################################################
+###########################################################|         FEEDBACK        |################################################################
 This Java project was an opportunity for me to learn Java for a week. Moreover, I enjoyed this "small challenge" because it covered important topics that I might have 
 ignored or neglected about Java if I learned by myself as I am used to do.
 Thank you for this challenge.
 
-################################################################################################################################################################
-################################################################################################################################################################
+######################################################################################################################################################
+#######################################################################################################################################################
